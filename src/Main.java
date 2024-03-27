@@ -11,16 +11,13 @@ public class Main {
                 "Escolha a operação desejada com o número correspondente: \n 1: Adição \n 2: Subtração \n 3: Multiplicação \n 4: Divisão. \n");
         int escolha = leitor.nextInt();
 
-        List<calc> numeros = new ArrayList<calc>();
-
         System.out.print("Qual o primeiro número que deseja calcular? ");
         Float num1 = leitor.nextFloat();
 
         System.out.print("Qual o segundo número que deseja calcular? ");
         Float num2 = leitor.nextFloat();
 
-        calc numeros_calc = new calc(num1, num2);
-        numeros.add(numeros_calc);
+        calculadora numeros_calc = new calculadora(num1, num2);
 
         if (escolha == 1) {
             numeros_calc.adicao(true);

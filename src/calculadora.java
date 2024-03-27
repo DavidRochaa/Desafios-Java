@@ -1,10 +1,10 @@
-public class calc {
+public class calculadora {
 
     float num1;
     float num2;
     float result;
 
-    calc(float n1, float n2) {
+    calculadora(float n1, float n2) {
         num1 = n1;
         num2 = n2;
     }
